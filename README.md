@@ -31,3 +31,4 @@
     4. src--All working files.
     5. index.js---recat entry point
     6. Public--contains static files
+    7. index.css--Css applies to entire pages
