@@ -37,3 +37,10 @@
 
 ## working with class component;
 ### Install (tachyons)
+
+
+## Component
+    1. Piece of code that can be reuse.
+    2. Such as function,But more powerful than function.
+    3. exapmle:--Header and footer,Card component on e-commerce websites;
+    
