@@ -32,3 +32,8 @@
     5. index.js---recat entry point
     6. Public--contains static files
     7. index.css--Css applies to entire pages
+
+## class vs hooks 
+
+## working with class component;
+### Install (tachyons)
