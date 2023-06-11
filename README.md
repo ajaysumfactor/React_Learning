@@ -43,4 +43,10 @@
     1. Piece of code that can be reuse.
     2. Such as function,But more powerful than function.
     3. exapmle:--Header and footer,Card component on e-commerce websites;
-    
+
+### Recat fragment
+    <></>
+### StrictMode in react
+    <StrictMode> lets you find common bugs in your components early during development.
+    StrictMode accepts no props.
+
