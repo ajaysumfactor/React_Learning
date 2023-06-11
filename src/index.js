@@ -4,7 +4,7 @@ import 'tachyons';
 import './index.css';
  import { robots } from './data/robots.js';
 import CardList from './CardList';
-// import App from './App';
+import App from './App';
  
 import reportWebVitals from './reportWebVitals';
  
@@ -16,7 +16,7 @@ import reportWebVitals from './reportWebVitals';
 //   </React.StrictMode>
 // );
 ReactDOM.render(
- <CardList robots={robots}/>
+ <App/>
 ,document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
