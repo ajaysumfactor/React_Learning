@@ -2,6 +2,7 @@ import React,{Component} from "react";
 import 'tachyons';
 import CardList from "./CardList";
  import SearchBox from './SearchBox'
+import { robots } from "./data/robots";
 
 class App extends Component{
     constructor(){
@@ -31,6 +32,10 @@ render(){
         return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
     })
     console.log("render");
+    if(this.state.robots.length===0){
+        return <h1>Loading...</h1>
+    }
+    else{
     return (
         <div className='tc'>
         <h1>RobotsFriends</h1>
@@ -38,6 +43,7 @@ render(){
         <CardList robots={filteredRobots}/>
         </div>
     );
+    }
 }
 }
 
