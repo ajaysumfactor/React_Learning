@@ -3,6 +3,7 @@ import 'tachyons';
 import CardList from "./CardList";
  import SearchBox from './SearchBox'
 import { robots } from "./data/robots";
+import Scroll from "./scroll";
 
 class App extends Component{
     constructor(){
@@ -40,7 +41,9 @@ render(){
         <div className='tc'>
         <h1>RobotsFriends</h1>
         <SearchBox searchChange={this.onSearchChange}/>
+        <Scroll>
         <CardList robots={filteredRobots}/>
+        </Scroll>
         </div>
     );
     }
