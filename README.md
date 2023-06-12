@@ -50,3 +50,12 @@
     <StrictMode> lets you find common bugs in your components early during development.
     StrictMode accepts no props.
 
+
+### React Hooks
+    1. Hooks were added to React in version 16.8.
+    2. Hooks allow function components to have access to state and Other React features
+#### Rules
+    1. Hooks---called---Only---Inside function components.
+    2. Hooks---called---At top level of a component.
+    3. Can not be conditional.
+    4. Not work in class component.
