@@ -2,8 +2,7 @@ import React,{Component} from "react";
 import 'tachyons';
 import CardList from "./CardList";
  import SearchBox from './SearchBox'
-import { robots } from "./data/robots";
-import Scroll from "./scroll";
+ import Scroll from "./scroll";
 
 class App extends Component{
     constructor(){
