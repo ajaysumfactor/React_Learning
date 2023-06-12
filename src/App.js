@@ -31,6 +31,23 @@ function App(){
     //     })
     //     console.log("component did mount ");
     // }
+ useEffect(()=>{
+    function fetchData(){
+    fetch('https://jsonplaceholder.typicode.com/users').then(response=>{
+                return response.json();
+            }).then(users=>{
+                setRobots(users);
+    
+            })
+            console.log({robots})
+        }
+        fetchData();
+           
+ },[])
+
+
+
+
     const onSearchChange = (event)=>{
         // console.log(event.target.value);
         setSearchfields( event.target.value)}

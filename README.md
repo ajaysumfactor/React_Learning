@@ -59,3 +59,8 @@
     2. Hooks---called---At top level of a component.
     3. Can not be conditional.
     4. Not work in class component.
+
+
+## useEffect Hooks
+    1. useEffect adds ability to perform side effects from aa function component.
+    2. It serves the same purpose as componentDidMount,componentDidUpdate.
