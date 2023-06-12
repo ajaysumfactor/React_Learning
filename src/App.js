@@ -18,6 +18,7 @@ function App(){
 
  const [robots,setRobots]=useState([]);
  const [searchfield,setSearchfields]=useState("");
+ const [count,setCount]=useState(0);
 
 
 
@@ -31,6 +32,9 @@ function App(){
     //     })
     //     console.log("component did mount ");
     // }
+
+
+
  useEffect(()=>{
     function fetchData(){
     fetch('https://jsonplaceholder.typicode.com/users').then(response=>{
@@ -39,11 +43,11 @@ function App(){
                 setRobots(users);
     
             })
-            console.log({robots})
+            console.log(count)
         }
         fetchData();
            
- },[])
+ },[count])
 
 
 
@@ -70,6 +74,7 @@ const filteredRobots = robots.filter(robots=>{
     console.log("render");
      return !robots.length ? <h1>Loading...</h1> :(<div className='tc'>
         <h1>RobotsFriends</h1>
+        <button onClick={()=>setCount(count+1)}>clickme</button>
         <SearchBox searchChange={onSearchChange}/>
         <Scroll>
             <ErrorBoundary>
