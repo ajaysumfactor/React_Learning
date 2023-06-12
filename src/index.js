@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'tachyons';
 import './index.css';
- import { robots } from './data/robots.js';
-import CardList from './CardList';
+ 
 import App from './App';
  
 import reportWebVitals from './reportWebVitals';
